@@ -7,20 +7,37 @@
 <style type="text/css">
 table.avrg-ag {
 	border-collapse: collapse;
-	width: 55%;
-	margin: auto 30px;
+	width: 65%;
+	margin: 20px auto 40px;
 	table-layout: auto;
-	border: 2px solid black;
+	border: 2px solid #4793AF;
 	border-radius: 5px;
 }
 
-tr th, tr td {
+caption {
+	font-weight: 900;
+}
+
+tr th, tr td, caption {
+	font-family: monospace;
+	font-size: 16px;
+	padding: 5px;
 	text-align: center;
+}
+
+tr td:nth-child(1) {
+	font-style: italic;
+}
+
+tr td:nth-child(1)::before {
+	content: "★ ";
+	color: #0E46A3;
 }
 </style>
 </head>
 <body>
 <table class="avrg-ag">
+<caption>Umur President saat penetapan</caption>
 <tr>
 <th>Name President</th>
 <th>Age-Average</th>
